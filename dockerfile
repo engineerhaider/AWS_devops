@@ -8,10 +8,10 @@ WORKDIR /app
 EXPOSE 8080
 
 # Copy the JAR file into the container at /app (WORKDIR)
-COPY aws_devops_proj.jar /app/aws_devops_proj.jar
-
+COPY aws_devops_proj.jar ./app
+#RUN chmod 755 aws_devops_proj.jar
 # Specify the command to run the jar file
-ENTRYPOINT ["java", "-jar", "/app/aws_devops_proj.jar"]
+ENTRYPOINT ["java", "-jar", "/app/aws-devops-proj.jar"]
 
 # Run the application as a non-root user for security
 USER nobody

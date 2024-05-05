@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aws-devops-proj
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aws-devops-proj  # This label is used to match the template labels
+  template:
+    metadata:
+      labels:
+        app: aws-devops-proj  # This must match exactly with the selector.matchLabels
+    spec:
+      containers:
+      - name: aws-devops-container
+        image: aws-devops-proj  # Ensure this is correct
+        ports:
+        - containerPort: 8080

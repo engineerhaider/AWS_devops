@@ -36,7 +36,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>aws_devops_proj</finalName>
+		<finalName>aws-devops-proj</finalName>
 	</build>
 
 </project>
