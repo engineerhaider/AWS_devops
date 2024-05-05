@@ -1,7 +1,7 @@
 FROM openjdk:17-jdk-openjdk
 WORKDIR /app
 EXPOSE 8080
-COPYaws_devops_proj.jar . 
+COPY aws_devops_proj.jar . 
 ADD aws_devops_proj.jar /aws_devops_proj.jar
 ENTRYPOINT ["java","-jar","/aws_devops_proj.jar"]
 USER nobody
