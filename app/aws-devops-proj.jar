@@ -8,7 +8,7 @@ WORKDIR /app
 EXPOSE 8080
 
 # Ensure the relative path here is correct
-COPY ./SPRINGBOOT-K8S-EXAMPLE-MAIN/aws-devops-proj.jar /System/Volumes/Data/Users/haidershaghati/Desktop/TechConsulting/Projects/task_01/springboot-k8s-example-main/app/aws-devops-proj.jar
+COPY ./SPRINGBOOT-K8S-EXAMPLE-MAIN/aws-devops-proj.jar /app/aws-devops-proj.jar
 
 # Set permissions if necessary (uncomment if you want to ensure executable permissions)
 # RUN chmod 755 /app/aws_devops_proj.jar
