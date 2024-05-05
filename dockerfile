@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-openjdk
+FROM openjdk:17
 WORKDIR /app
 EXPOSE 8080
 COPY aws_devops_proj.jar . 
